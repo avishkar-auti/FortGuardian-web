@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Campaigns - Fort Guardian</title>
+    <link rel="stylesheet" href="events.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fort-awesome"></i>
+                    <span>Fort Guardian</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index/index.html" class="nav-link">Home</a></li>
+                    <li><a href="../events/events.html" class="nav-link active">Events</a></li>
+                    <li><a href="../registration/registration.html" class="nav-link">Register</a></li>
+                    <li><a href="../volunteer/volunteer.html" class="nav-link">Volunteer</a></li>
+                    <li><a href="../gallery/gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="../testimonials/testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="../about/about.html" class="nav-link">About</a></li>
+                    <li><a href="../contact/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="../faq/faq.html" class="nav-link">FAQ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Events & Campaigns</h1>
+                <p class="hero-subtitle">Join us in preserving Maharashtra's heritage through meaningful action</p>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <div class="container">
+                <div class="events-filters">
+                    <h2>Filter Events</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Events</button>
+                        <button class="filter-btn" data-filter="cleaning">Cleaning Drive</button>
+                        <button class="filter-btn" data-filter="camping">Eco-Camping</button>
+                        <button class="filter-btn" data-filter="trekking">Trekking</button>
+                        <button class="filter-btn" data-filter="heritage">Heritage Walk</button>
+                    </div>
+                </div>
+
+                <div class="events-grid">
+                    <!-- Upcoming Events -->
+                    <div class="event-card" data-category="cleaning">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Shivneri Fort">
+                            <div class="event-type">Cleaning Drive</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Shivneri Fort Cleaning Campaign</h3>
+                            <p class="event-description">Join us for a comprehensive cleaning drive at the birthplace of Chhatrapati Shivaji Maharaj. Help preserve this sacred heritage site for future generations.</p>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>July 22, 2025</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-clock"></i>
+                                    <span>7:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Shivneri Fort, Junnar</span>
+                                    <a href="https://maps.google.com/?q=Shivneri+Fort+Junnar" target="_blank" class="map-link">🗺️ View on Google Maps</a>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-users"></i>
+                                    <span>45 seats left</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Registration ends: July 20, 2025</span>
+                                </div>
+                            </div>
+                            <a href="../registration/registration.html?event=shivneri-cleaning" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="camping">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Eco Camping">
+                            <div class="event-type">Eco-Camping</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Sustainable Camping at Lohagad</h3>
+                            <p class="event-description">Experience nature responsibly with our eco-friendly camping program. Learn sustainable practices while enjoying the scenic beauty of Lohagad Fort.</p>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>July 28-29, 2025</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6:00 PM - 8:00 AM</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Lohagad Fort, Lonavala</span>
+                                    <a href="https://maps.google.com/?q=Lohagad+Fort+Lonavala" target="_blank" class="map-link">🗺️ View on Google Maps</a>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-users"></i>
+                                    <span>12 seats left</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Registration ends: July 25, 2025</span>
+                                </div>
+                            </div>
+                            <a href="../registration/registration.html?event=lohagad-camping" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="trekking">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Trekking">
+                            <div class="event-type">Trekking</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Sunrise Trek to Rajgad Fort</h3>
+                            <p class="event-description">Experience the magical sunrise from Rajgad Fort, the former capital of the Maratha Empire. A moderate trek suitable for beginners.</p>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>August 5, 2025</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-clock"></i>
+                                    <span>4:00 AM - 10:00 AM</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Rajgad Fort, Pune</span>
+                                    <a href="https://maps.google.com/?q=Rajgad+Fort+Pune" target="_blank" class="map-link">🗺️ View on Google Maps</a>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-users"></i>
+                                    <span>25 seats left</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Registration ends: August 2, 2025</span>
+                                </div>
+                            </div>
+                            <a href="../registration/registration.html?event=rajgad-trek" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="heritage">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Heritage Walk">
+                            <div class="event-type">Heritage Walk</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Historical Walk at Pratapgad</h3>
+                            <p class="event-description">Explore the rich history of Pratapgad Fort with expert guides. Learn about the famous encounter between Shivaji and Afzal Khan.</p>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>August 12, 2025</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-clock"></i>
+                                    <span>9:00 AM - 3:00 PM</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Pratapgad Fort, Satara</span>
+                                    <a href="https://maps.google.com/?q=Pratapgad+Fort+Satara" target="_blank" class="map-link">🗺️ View on Google Maps</a>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-users"></i>
+                                    <span>30 seats left</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Registration ends: August 9, 2025</span>
+                                </div>
+                            </div>
+                            <a href="../registration/registration.html?event=pratapgad-heritage" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="cleaning">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Raigad Fort">
+                            <div class="event-type">Cleaning Drive</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Raigad Fort Restoration Drive</h3>
+                            <p class="event-description">Help restore the capital of the Maratha Empire. Join our comprehensive cleaning and minor restoration activities at Raigad Fort.</p>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>August 19, 2025</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-clock"></i>
+                                    <span>8:00 AM - 5:00 PM</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Raigad Fort, Mahad</span>
+                                    <a href="https://maps.google.com/?q=Raigad+Fort+Mahad" target="_blank" class="map-link">🗺️ View on Google Maps</a>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-users"></i>
+                                    <span>60 seats left</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Registration ends: August 16, 2025</span>
+                                </div>
+                            </div>
+                            <a href="../registration/registration.html?event=raigad-cleaning" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="camping">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Night Camping">
+                            <div class="event-type">Eco-Camping</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Moonlight Camping at Sinhagad</h3>
+                            <p class="event-description">Experience the historical Sinhagad Fort under the starlit sky. Learn about eco-friendly camping practices and fort history.</p>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>August 26-27, 2025</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5:00 PM - 9:00 AM</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Sinhagad Fort, Pune</span>
+                                    <a href="https://maps.google.com/?q=Sinhagad+Fort+Pune" target="_blank" class="map-link">🗺️ View on Google Maps</a>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-users"></i>
+                                    <span>18 seats left</span>
+                                </div>
+                                <div class="event-info">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Registration ends: August 23, 2025</span>
+                                </div>
+                            </div>
+                            <a href="../registration/registration.html?event=sinhagad-camping" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guidelines">
+            <div class="container">
+                <h2>Event Guidelines</h2>
+                <div class="guidelines-grid">
+                    <div class="guideline-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Eco-Friendly</h3>
+                        <p>Follow Leave No Trace principles and use only biodegradable products.</p>
+                    </div>
+                    <div class="guideline-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safety First</h3>
+                        <p>Wear appropriate safety gear and follow all safety instructions from guides.</p>
+                    </div>
+                    <div class="guideline-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Respect Heritage</h3>
+                        <p>Treat historical sites with respect and avoid damaging any structures.</p>
+                    </div>
+                    <div class="guideline-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Team Spirit</h3>
+                        <p>Work collaboratively and help fellow participants throughout the event.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fort Guardian</h3>
+                    <p>Protecting Maharashtra's heritage through community-driven conservation efforts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="../volunteer/volunteer.html">Volunteer</a></li>
+                        <li><a href="../about/about.html">About Us</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@fortguardian.org</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fort Guardian. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="events.js"></script>
+</body>
+</html>

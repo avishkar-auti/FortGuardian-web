@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Fort Guardian</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fort-awesome"></i>
+                    <span>Fort Guardian</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index/index.html" class="nav-link">Home</a></li>
+                    <li><a href="../events/events.html" class="nav-link">Events</a></li>
+                    <li><a href="../registration/registration.html" class="nav-link">Register</a></li>
+                    <li><a href="../volunteer/volunteer.html" class="nav-link">Volunteer</a></li>
+                    <li><a href="../gallery/gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="../testimonials/testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="../about/about.html" class="nav-link">About</a></li>
+                    <li><a href="../contact/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="../faq/faq.html" class="nav-link">FAQ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Photo Gallery</h1>
+                <p class="hero-subtitle">Capturing moments from our heritage conservation journey</p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-filters">
+                    <h2>Filter by Event Type</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Photos</button>
+                        <button class="filter-btn" data-filter="cleaning">Cleaning Drives</button>
+                        <button class="filter-btn" data-filter="camping">Eco-Camping</button>
+                        <button class="filter-btn" data-filter="trekking">Trekking</button>
+                        <button class="filter-btn" data-filter="heritage">Heritage Walks</button>
+                        <button class="filter-btn" data-filter="community">Community Events</button>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Cleaning Drive Photos -->
+                    <div class="gallery-item" data-category="cleaning">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Raigad Fort Cleaning Drive">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Raigad Fort Cleaning Drive</h3>
+                                <p>December 2024</p>
+                                <span class="event-type">Cleaning Drive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="cleaning">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Volunteers cleaning fort">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Volunteer Team in Action</h3>
+                                <p>January 2025</p>
+                                <span class="event-type">Cleaning Drive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="cleaning">
+                        <img src="https://images.unsplash.com/photo-1596727362302-b8d891c42ab8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Waste collection">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Waste Collection Initiative</h3>
+                                <p>November 2024</p>
+                                <span class="event-type">Cleaning Drive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eco-Camping Photos -->
+                    <div class="gallery-item" data-category="camping">
+                        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Eco-camping setup">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sustainable Camping at Lohagad</h3>
+                                <p>January 2025</p>
+                                <span class="event-type">Eco-Camping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="camping">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Campfire session">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Evening Campfire Stories</h3>
+                                <p>December 2024</p>
+                                <span class="event-type">Eco-Camping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="camping">
+                        <img src="https://images.unsplash.com/photo-1602264415348-6e4e2d3b5b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tent setup">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Eco-Friendly Tent Setup</h3>
+                                <p>October 2024</p>
+                                <span class="event-type">Eco-Camping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trekking Photos -->
+                    <div class="gallery-item" data-category="trekking">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Trekking group">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Rajgad Fort Trek</h3>
+                                <p>February 2025</p>
+                                <span class="event-type">Trekking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="trekking">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sunrise view">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sunrise from Sinhagad</h3>
+                                <p>January 2025</p>
+                                <span class="event-type">Trekking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="trekking">
+                        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mountain trail">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Trail to Pratapgad</h3>
+                                <p>March 2025</p>
+                                <span class="event-type">Trekking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Heritage Walk Photos -->
+                    <div class="gallery-item" data-category="heritage">
+                        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Heritage walk">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Historical Walk at Pratapgad</h3>
+                                <p>February 2025</p>
+                                <span class="event-type">Heritage Walk</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="heritage">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fort architecture">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Architectural Heritage Study</h3>
+                                <p>December 2024</p>
+                                <span class="event-type">Heritage Walk</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="heritage">
+                        <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Historical structures">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Ancient Structures at Shivneri</h3>
+                                <p>November 2024</p>
+                                <span class="event-type">Heritage Walk</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Community Event Photos -->
+                    <div class="gallery-item" data-category="community">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Community meeting">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Volunteer Training Session</h3>
+                                <p>January 2025</p>
+                                <span class="event-type">Community Event</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="community">
+                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Award ceremony">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Volunteer Recognition Ceremony</h3>
+                                <p>December 2024</p>
+                                <span class="event-type">Community Event</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="community">
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Group photo">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Annual Fort Guardian Meet</h3>
+                                <p>March 2025</p>
+                                <span class="event-type">Community Event</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="cleaning">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Shivneri Fort cleaning">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Shivneri Fort Cleaning</h3>
+                                <p>March 2025</p>
+                                <span class="event-type">Cleaning Drive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="camping">
+                        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Night camping">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Moonlight Camping</h3>
+                                <p>February 2025</p>
+                                <span class="event-type">Eco-Camping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="heritage">
+                        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Heritage education">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Heritage Education Session</h3>
+                                <p>January 2025</p>
+                                <span class="event-type">Heritage Walk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistics">
+            <div class="container">
+                <h2 class="section-title">Our Impact in Pictures</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">1,500+</div>
+                        <div class="stat-label">Photos Captured</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Events Documented</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Forts Visited</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Volunteers Featured</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDate"></p>
+                <span id="modalCategory"></span>
+            </div>
+            <div class="modal-nav">
+                <button id="prevBtn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fort Guardian</h3>
+                    <p>Protecting Maharashtra's heritage through community-driven conservation efforts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="../volunteer/volunteer.html">Volunteer</a></li>
+                        <li><a href="../about/about.html">About Us</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@fortguardian.org</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fort Guardian. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

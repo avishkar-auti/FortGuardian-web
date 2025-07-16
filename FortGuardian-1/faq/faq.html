@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Fort Guardian</title>
+    <link rel="stylesheet" href="faq.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fort-awesome"></i>
+                    <span>Fort Guardian</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index/index.html" class="nav-link">Home</a></li>
+                    <li><a href="../events/events.html" class="nav-link">Events</a></li>
+                    <li><a href="../registration/registration.html" class="nav-link">Register</a></li>
+                    <li><a href="../volunteer/volunteer.html" class="nav-link">Volunteer</a></li>
+                    <li><a href="../gallery/gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="../testimonials/testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="../about/about.html" class="nav-link">About</a></li>
+                    <li><a href="../contact/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="../faq/faq.html" class="nav-link active">FAQ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Frequently Asked Questions</h1>
+                <p class="hero-subtitle">Find answers to common questions about Fort Guardian</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search for questions...">
+                        <button id="clearSearch" class="clear-btn"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-categories">
+                    <h2>Browse by Category</h2>
+                    <div class="category-buttons">
+                        <button class="category-btn active" data-category="all">All Questions</button>
+                        <button class="category-btn" data-category="events">Events</button>
+                        <button class="category-btn" data-category="registration">Registration</button>
+                        <button class="category-btn" data-category="volunteer">Volunteering</button>
+                        <button class="category-btn" data-category="safety">Safety</button>
+                        <button class="category-btn" data-category="general">General</button>
+                    </div>
+                </div>
+
+                <div class="faq-container">
+                    <!-- Events Category -->
+                    <div class="faq-item" data-category="events">
+                        <div class="faq-question">
+                            <h3>How can I participate in Fort Guardian events?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can participate in our events by registering through our events page. Most events are open to all age groups (16-65 years) with basic fitness requirements. Simply browse our upcoming events, select the one you're interested in, and complete the registration form. You'll receive a confirmation email with detailed guidelines and what to bring.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="events">
+                        <div class="faq-question">
+                            <h3>Are Fort Guardian events free to participate?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, all our heritage conservation events are completely free. We believe in making heritage accessible to everyone. This includes fort cleaning drives, heritage walks, and most camping events. We provide basic equipment, refreshments, and transportation from designated meeting points.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="events">
+                        <div class="faq-question">
+                            <h3>What types of events does Fort Guardian organize?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We organize various types of events including:</p>
+                            <ul>
+                                <li>Fort Cleaning Drives - community efforts to clean and preserve historical sites</li>
+                                <li>Eco-Camping - sustainable overnight camping experiences</li>
+                                <li>Heritage Walks - educational tours with historical insights</li>
+                                <li>Trekking Events - adventure activities combined with heritage education</li>
+                                <li>Community Workshops - training sessions on conservation techniques</li>
+                                <li>Volunteer Recognition Events - celebrating our community</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="events">
+                        <div class="faq-question">
+                            <h3>How far in advance are events announced?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We typically announce events 2-4 weeks in advance to give participants adequate time to register and prepare. Major events or special campaigns may be announced earlier. We recommend subscribing to our newsletter and following our social media pages for the latest updates on upcoming events.</p>
+                        </div>
+                    </div>
+
+                    <!-- Registration Category -->
+                    <div class="faq-item" data-category="registration">
+                        <div class="faq-question">
+                            <h3>What is the registration process for events?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Registration is simple and online:</p>
+                            <ol>
+                                <li>Visit our Events page and select your preferred event</li>
+                                <li>Click "Register Now" and fill out the registration form</li>
+                                <li>Provide required information including emergency contact details</li>
+                                <li>Submit the form and receive a confirmation email within 24 hours</li>
+                                <li>Receive detailed event guidelines and preparation instructions</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="registration">
+                        <div class="faq-question">
+                            <h3>Can I cancel my registration if I cannot attend?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can cancel your registration. We request at least 48 hours notice so we can offer your spot to someone on the waiting list. To cancel, email us at events@fortguardian.org with your registration ID. If you're a regular participant who has to cancel frequently, please consider our volunteer program where you can help with event organization instead.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="registration">
+                        <div class="faq-question">
+                            <h3>Is there an age limit for participation?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Participants must be between 16-65 years old for most events. Minors (16-18 years) require parental consent and must be accompanied by a guardian or have written permission. For participants over 65, we may require a medical clearance certificate. Some events may have specific age requirements based on difficulty level.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="registration">
+                        <div class="faq-question">
+                            <h3>Do I need prior experience to join events?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No prior experience is required for most of our events. We welcome beginners and provide all necessary training and guidance. Our experienced volunteers and guides will assist you throughout the event. However, basic fitness is required for trekking and camping events. If you have specific concerns, mention them during registration.</p>
+                        </div>
+                    </div>
+
+                    <!-- Volunteer Category -->
+                    <div class="faq-item" data-category="volunteer">
+                        <div class="faq-question">
+                            <h3>How can I become a volunteer with Fort Guardian?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To become a volunteer, fill out our volunteer application form on the Volunteer page. We'll review your application within 2-3 business days and contact you for an orientation session. Volunteers are the backbone of our organization, and we offer various roles from event coordination to social media management, safety coordination, and heritage education.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="volunteer">
+                        <div class="faq-question">
+                            <h3>What is the time commitment for volunteers?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Time commitment varies based on your role and availability. We offer flexible options:</p>
+                            <ul>
+                                <li>Event Volunteers: 1-2 days per month</li>
+                                <li>Regular Volunteers: 4-8 hours per month</li>
+                                <li>Leadership Roles: 10-15 hours per month</li>
+                                <li>Occasional Volunteers: As per availability</li>
+                            </ul>
+                            <p>We work with your schedule and understand that volunteers have other commitments.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="volunteer">
+                        <div class="faq-question">
+                            <h3>Do volunteers receive any benefits or recognition?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We believe in recognizing our volunteers' contributions:</p>
+                            <ul>
+                                <li>Volunteer certificates for active participation</li>
+                                <li>Annual volunteer recognition ceremony</li>
+                                <li>Priority registration for special events</li>
+                                <li>Skill development workshops and training</li>
+                                <li>Letters of recommendation for students and professionals</li>
+                                <li>Fort Guardian merchandise and badges</li>
+                                <li>Networking opportunities with like-minded individuals</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Safety Category -->
+                    <div class="faq-item" data-category="safety">
+                        <div class="faq-question">
+                            <h3>What safety measures are in place during events?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Safety is our top priority. Our safety measures include:</p>
+                            <ul>
+                                <li>Experienced guides and safety coordinators on all events</li>
+                                <li>First aid kits and trained first aid volunteers</li>
+                                <li>Emergency communication equipment</li>
+                                <li>Weather monitoring and event cancellation protocols</li>
+                                <li>Insurance coverage for all participants</li>
+                                <li>Pre-event safety briefings</li>
+                                <li>Established emergency evacuation procedures</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="safety">
+                        <div class="faq-question">
+                            <h3>What should I do if I have a medical condition?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Please mention any medical conditions during registration. Our team will assess whether the event is suitable for you and what additional precautions might be needed. For serious medical conditions, we may require a doctor's clearance. We maintain confidentiality of medical information and ensure our safety coordinators are informed only of relevant details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="safety">
+                        <div class="faq-question">
+                            <h3>What happens if weather conditions are unfavorable?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We monitor weather conditions closely before and during events. In case of severe weather warnings or unsafe conditions, we will:</p>
+                            <ul>
+                                <li>Send notifications via SMS and email to all participants</li>
+                                <li>Postpone or cancel the event if necessary</li>
+                                <li>Offer alternative dates for postponed events</li>
+                                <li>Provide full refund for any paid components (rare)</li>
+                                <li>Make decisions at least 12 hours before event start time when possible</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- General Category -->
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h3>What should I bring to events?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We provide a detailed packing list after registration. Generally, you should bring:</p>
+                            <ul>
+                                <li>Comfortable trekking shoes with good grip</li>
+                                <li>Water bottle (minimum 2 liters)</li>
+                                <li>Sunscreen and hat</li>
+                                <li>Personal medications</li>
+                                <li>Small backpack</li>
+                                <li>Flashlight or headlamp</li>
+                                <li>Extra clothes and rain protection</li>
+                                <li>Snacks (optional, we provide meals)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h3>How does Fort Guardian contribute to heritage conservation?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Fort Guardian contributes to heritage conservation through:</p>
+                            <ul>
+                                <li>Regular cleaning and maintenance of historical sites</li>
+                                <li>Documentation and photography of fort conditions</li>
+                                <li>Raising awareness about heritage preservation</li>
+                                <li>Collaborating with archaeological departments</li>
+                                <li>Promoting sustainable tourism practices</li>
+                                <li>Educational programs about Maratha history</li>
+                                <li>Training volunteers in conservation techniques</li>
+                                <li>Research and documentation of lesser-known forts</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h3>Can I bring my family and friends to events?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We encourage group participation as it strengthens community bonds. However, each person must register individually and meet the age and fitness requirements. Family events are specially designed for participants with children. Groups of 5 or more may receive special coordination to ensure everyone has a great experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h3>How can I stay updated on Fort Guardian activities?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Stay connected with Fort Guardian through:</p>
+                            <ul>
+                                <li>Our website - check the events page regularly</li>
+                                <li>Newsletter subscription - monthly updates and event announcements</li>
+                                <li>Social media - Facebook, Instagram, Twitter, and YouTube</li>
+                                <li>WhatsApp groups for volunteers and regular participants</li>
+                                <li>Email notifications for registered participants</li>
+                                <li>Community meetings and volunteer orientations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h3>Does Fort Guardian offer educational programs?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, education is a core part of our mission. We offer:</p>
+                            <ul>
+                                <li>Heritage walks with expert historians</li>
+                                <li>Workshops on conservation techniques</li>
+                                <li>Photography and documentation training</li>
+                                <li>Environmental awareness sessions</li>
+                                <li>Maratha history storytelling sessions</li>
+                                <li>School and college outreach programs</li>
+                                <li>Online webinars and virtual tours</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="no-results" id="noResults" style="display: none;">
+                    <div class="no-results-content">
+                        <i class="fas fa-search"></i>
+                        <h3>No results found</h3>
+                        <p>We couldn't find any questions matching your search. Try different keywords or browse by category.</p>
+                        <button class="btn btn-primary" onclick="clearSearch()">Clear Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Still have questions?</h2>
+                    <p>Can't find the answer you're looking for? Our team is here to help you with any questions about Fort Guardian events, volunteering, or heritage conservation.</p>
+                    <div class="cta-buttons">
+                        <a href="../contact/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="../volunteer/volunteer.html" class="btn btn-secondary">Join as Volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fort Guardian</h3>
+                    <p>Protecting Maharashtra's heritage through community-driven conservation efforts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="../volunteer/volunteer.html">Volunteer</a></li>
+                        <li><a href="../about/about.html">About Us</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@fortguardian.org</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fort Guardian. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="faq.js"></script>
+</body>
+</html>

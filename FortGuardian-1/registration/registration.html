@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration - Fort Guardian</title>
+    <link rel="stylesheet" href="registration.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-fort-awesome"></i>
+                    <span>Fort Guardian</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index/index.html" class="nav-link">Home</a></li>
+                    <li><a href="../events/events.html" class="nav-link">Events</a></li>
+                    <li><a href="../registration/registration.html" class="nav-link active">Register</a></li>
+                    <li><a href="../volunteer/volunteer.html" class="nav-link">Volunteer</a></li>
+                    <li><a href="../gallery/gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="../testimonials/testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="../about/about.html" class="nav-link">About</a></li>
+                    <li><a href="../contact/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="../faq/faq.html" class="nav-link">FAQ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Event Registration</h1>
+                <p class="hero-subtitle">Join us in preserving Maharashtra's heritage</p>
+            </div>
+        </section>
+
+        <section class="registration-section">
+            <div class="container">
+                <div class="registration-container">
+                    <div class="form-container">
+                        <div class="form-header">
+                            <h2>Register for Event</h2>
+                            <p>Fill out the form below to secure your spot in our upcoming event</p>
+                        </div>
+
+                        <form id="registrationForm" class="registration-form">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                <span class="error-message" id="fullNameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Age *</label>
+                                <input type="number" id="age" name="age" min="16" max="65" required>
+                                <span class="error-message" id="ageError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="event">Select Event *</label>
+                                <select id="event" name="event" required>
+                                    <option value="">Choose an event...</option>
+                                    <option value="shivneri-cleaning">Shivneri Fort Cleaning Campaign</option>
+                                    <option value="lohagad-camping">Sustainable Camping at Lohagad</option>
+                                    <option value="rajgad-trek">Sunrise Trek to Rajgad Fort</option>
+                                    <option value="pratapgad-heritage">Historical Walk at Pratapgad</option>
+                                    <option value="raigad-cleaning">Raigad Fort Restoration Drive</option>
+                                    <option value="sinhagad-camping">Moonlight Camping at Sinhagad</option>
+                                </select>
+                                <span class="error-message" id="eventError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="emergencyContact">Emergency Contact Name *</label>
+                                <input type="text" id="emergencyContact" name="emergencyContact" required>
+                                <span class="error-message" id="emergencyContactError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="emergencyPhone">Emergency Contact Phone *</label>
+                                <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+                                <span class="error-message" id="emergencyPhoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="experience">Previous Experience (Optional)</label>
+                                <select id="experience" name="experience">
+                                    <option value="">Select your experience level...</option>
+                                    <option value="beginner">Beginner (No prior experience)</option>
+                                    <option value="intermediate">Intermediate (Some experience)</option>
+                                    <option value="advanced">Advanced (Extensive experience)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dietary">Dietary Restrictions (Optional)</label>
+                                <textarea id="dietary" name="dietary" rows="3" placeholder="Please mention any dietary restrictions, allergies, or special requirements..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="medical">Medical Conditions (Optional)</label>
+                                <textarea id="medical" name="medical" rows="3" placeholder="Please mention any medical conditions we should be aware of..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tshirtSize">T-Shirt Size (Optional)</label>
+                                <select id="tshirtSize" name="tshirtSize">
+                                    <option value="">Select size...</option>
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                    <option value="xxl">XXL</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="guidelines" name="guidelines" required>
+                                    <span class="checkmark"></span>
+                                    I have read and agree to the <a href="#" class="link">event guidelines</a> and <a href="#" class="link">terms & conditions</a> *
+                                </label>
+                                <span class="error-message" id="guidelinesError"></span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="waiver" name="waiver" required>
+                                    <span class="checkmark"></span>
+                                    I understand the risks involved and agree to the liability waiver *
+                                </label>
+                                <span class="error-message" id="waiverError"></span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for updates on future events
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Register for Event</button>
+                        </form>
+                    </div>
+
+                    <div class="info-container">
+                        <div class="info-card">
+                            <h3><i class="fas fa-info-circle"></i> Registration Information</h3>
+                            <ul>
+                                <li>Registration is free for all events</li>
+                                <li>Confirmation email will be sent within 24 hours</li>
+                                <li>Age limit: 16-65 years</li>
+                                <li>Basic fitness level required</li>
+                                <li>Event guidelines will be emailed after registration</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-backpack"></i> What to Bring</h3>
+                            <ul>
+                                <li>Comfortable trekking shoes</li>
+                                <li>Water bottle (minimum 2 liters)</li>
+                                <li>Sunscreen and hat</li>
+                                <li>Personal medications</li>
+                                <li>Small backpack</li>
+                                <li>Flashlight/headlamp</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-shield-alt"></i> Safety Measures</h3>
+                            <ul>
+                                <li>Experienced guides on all trips</li>
+                                <li>First aid kit available</li>
+                                <li>Emergency communication equipment</li>
+                                <li>Weather monitoring and updates</li>
+                                <li>Insurance coverage for participants</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-phone"></i> Contact Support</h3>
+                            <p>Need help with registration?</p>
+                            <p><strong>Email:</strong> registration@fortguardian.org</p>
+                            <p><strong>Phone:</strong> +91 9876543210</p>
+                            <p><strong>Hours:</strong> Mon-Fri 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Modal -->
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2><i class="fas fa-check-circle"></i> Registration Successful!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for registering for our event. Your registration has been submitted successfully.</p>
+                    <p>You will receive a confirmation email within 24 hours with detailed event guidelines and instructions.</p>
+                    <p><strong>Registration ID:</strong> <span id="registrationId"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="closeModal" class="btn btn-primary">Close</button>
+                    <a href="../events/events.html" class="btn btn-secondary">View More Events</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fort Guardian</h3>
+                    <p>Protecting Maharashtra's heritage through community-driven conservation efforts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="../volunteer/volunteer.html">Volunteer</a></li>
+                        <li><a href="../about/about.html">About Us</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@fortguardian.org</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fort Guardian. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="registration.js"></script>
+</body>
+</html>

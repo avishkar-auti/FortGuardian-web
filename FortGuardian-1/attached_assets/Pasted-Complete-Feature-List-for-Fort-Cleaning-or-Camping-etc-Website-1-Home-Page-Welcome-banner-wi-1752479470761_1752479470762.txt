@@ -1,0 +1,191 @@
+Complete Feature List for "Fort Cleaning or Camping etc" Website
+🏠 1. Home Page
+Welcome banner with scenic images
+
+Brief intro about your mission (cleaning forts, promoting eco-camping)
+
+Call-to-action buttons (e.g., “View Upcoming Events”, “Join Campaign”)
+
+📅 2. Events & Campaigns Page
+List of upcoming events (camping, fort cleaning, trekking)
+
+Each event includes:
+
+Event Name & Type (e.g., Camping, Cleaning Drive)
+
+Location with map
+
+Date & Time
+
+Registration Deadline
+
+Number of seats left (optional)
+
+“Register Now” button
+
+Filter or search by event type/date (can be added later with JavaScript)
+
+📝 3. Registration Form
+Form fields: Full Name, Email, Phone Number, Event selection, Emergency Contact
+
+Submission confirmation page or message
+
+Optional: download event guidelines after registration
+
+🧑‍🤝‍🧑 4. Volunteer/Member Section
+Info on how to become a regular volunteer
+
+Benefits of joining your community
+
+“Join as Volunteer” form
+
+🖼️ 5. Photo/Video Gallery
+Photos from past campaigns/camping experiences
+
+Optionally group by event
+
+Embedded YouTube videos (if any)
+
+💬 6. Testimonials
+Reviews from past participants or volunteers
+
+Star ratings or quote layout
+
+📌 7. About Us
+Your mission, story, and team
+
+Timeline of achievements or major past events
+
+📞 8. Contact Page
+Contact form: Name, Email, Message
+
+Your social links (Instagram, Facebook, etc.)
+
+Embedded Google Map (for meetup points or HQ)
+
+Based on this topic i want the website you can use if you want or else let go 
+HTML
+•	Basic Tags of HTML
+o	<p>
+o	<h1> to <h6>
+o	<pre>
+o	<div>
+o	<span>
+•	HTML Elements
+o	Block Level Elements:
+o	Inline Elements:
+•	HTML Attributes
+o	Core or global attributes:
+	style
+	title
+	id
+	class
+o	Element specific attributes:
+•	Formatting Tags
+o	<b>
+o	<strong>
+o	<i>
+o	<em>
+o	<u>
+o	<ins>
+o	<strike>
+o	<mark>
+o	<sup>
+o	<sub>
+o	<q>
+o	<center>
+o	<marquee>
+•	Semantic Tags (Elements)
+o	Examples of non-semantic: <div>, <span>
+o	Examples of semantic: <form>, <table>, <article>
+o	Some Semantic Elements:
+	<header>
+	<details>
+	<aside>
+	<main>
+	<nav>
+	<section>
+	<table>
+	<article>
+	<footer>
+	<form>
+•	List Creation
+o	Ordered List (<ol>):
+	<ol>
+	<li>
+o	Unordered List (<ul>):
+	<ul>
+o	Description List (<dl>):
+	<dl>
+	<dt>
+	<dd>
+o	Nested List:
+•	Table Creation
+o	<table>
+o	<tr>
+o	<th>
+o	<td>
+•	Image Handling (<img> tag)
+o	<img>
+•	Anchor Tag (<a> tag)
+o	<a>
+•	Form Creation (<form> Element)
+o	<input>
+o	Basic tags of form creation:
+	<input>
+	<label>
+	<textarea>
+	<fieldset>
+	<legend>
+	<select>
+	<optgroup>
+	<option>
+	<button>
+•	Media Tags
+o	Audio (<audio> tag):
+	<audio>
+o	Video (<video> tag):
+	<video>
+o	Iframe Tag (<iframe> tag):
+	<iframe>
+•	Generating QR Code
+CSS
+•	Definition:
+•	History of CSS
+•	CSS Syntax:
+•	3 Ways to Add CSS in HTML
+o	Inline CSS:
+o	Internal CSS:
+o	External CSS:
+•	CSS Selectors
+o	Simple Selectors (style in five ways):
+	Id Selector:
+	Class Selector:
+	Tagname Selector:
+	Grouping Selector:
+	Universal Selectors:
+o	Combinator Selectors:
+	Descendent Selector:
+	Child Selector:
+	Adjacent Selector:
+	General Sibling Selector:
+o	Attribute Selectors:
+o	Pseudo Element Selectors:
+	::first-letter
+	::first-line
+	::before
+	::after
+	::selection
+	::marker
+o	Pseudo Class Selectors:
+	Dynamic pseudo-class:
+	:hover
+	:visited
+	:active
+	:focus
+	Structural pseudo-class:
+	:first-child
+	:last-child
+	:nth-child(n)
+	:first-of-type
+	:last-of-type
