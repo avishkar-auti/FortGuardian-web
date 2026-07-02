@@ -1,0 +1,11 @@
+images:
+  - name: payments-api
+    current_image: myregistry.io/payments-api:1.4.2
+    dockerfile_path: services/payments-api/Dockerfile
+    owner_team: payments
+    environment: production
+  - name: notifications-worker
+    current_image: myregistry.io/notifications-worker:2.0.0
+    dockerfile_path: services/notifications-worker/Dockerfile
+    owner_team: platform
+    environment: production
